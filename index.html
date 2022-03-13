@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CI Magazine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <!-- font awosome & bootstrap cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Bitter:wght@200&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <!-- start header -->
+    <Header class="container">
+      <div class="nav-bar ">
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="ادخل كلمة البحث">
+            <label for="">بحث</label>
+          </form>
+          <button id="toggel-menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="nav-links">
+          <a href="" ><img src="/images/watania.jpg" alt="logo" class="logo"></a>
+          <div class="links">
+            <ul>
+              <li class="active"><a href="#" class="link">الرئيسية</a></li>
+              <li><a href="https://alwatania-egy.com/" class="link">أخبار الوطنية</a></li>
+              <li><a href="https://www.elwatannews.com/search/news/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AC%D9%86
+                " class="link">أخبار الدواجن</a></li>
+              <li><a href="#" class="link">مؤشرات  الاداء</a></li>
+              <li>
+                <a href="" class="link" id="show-hide"><i class="fa-solid fa-caret-down"></i>أخرى</a>
+                <div class="main-menu " id="menu">
+                    <div class="sub-menu">
+                      <a href="">قرارات هامة</a>
+                      <a href="">انجازات الافراد</a>
+                      <a href="#dreport">التقرير اليومى</a>
+                      <a href="">التقرير الشهرى</a>
+                      <a href="">حوافز وخصومات</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Header>
+    <!-- end header -->
+
+    <!-- start slider -->
+    <div class="slider container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <a href="https://alwatania-egy.com/"><img src="/images/news.png" class="d-block w-100" alt="watania news"></a> 
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>أخبارالوطنية</h1>
+                  <p>أخبار ادواجن الوطنية مصر - السعودية - قرارت  - وظائف شاغرة ..</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.elwatannews.com/search/news/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AC%D9%86">
+                  <img src="/images/1.PNG" class="d-block w-100" alt="poultry news">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>أخبار الدواجن</h1>
+                  <p>بورصة الدواجن - بورصة الاعلاف - اللحوم الحمراء</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="/images/kpis2.jpg" class="d-block w-100" alt="kpis"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 >مؤشرات قياس الأداء</h1>
+                  <p >أداء الافراد - إنتاجيات المصانع - تحقيق خطة الانتاج - التكاليف p>  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    </div>
+    <!-- end slider -->
+
+    <!-- ********************************************************** -->
+    <!-- <div class="adress">
+      <h1>التقرير اليومى للقطاع الصناعى</h1>
+      <i class="fas fa-plane"></i>
+    </div> -->
+    <!-- ********************************************************** -->
+
+    <!-- start daily report section -->
+    <div class="content-section d-report " id="dreport">
+      <div class="container">
+            <div class="top-d">
+            <!-- <div class="date">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>18-Feb-2022</span>
+            </div> -->
+            <div class="discription">
+                <h1>تقرير المتابعة اليومى للقطاع الصناعى</h1>
+                <p>الدجاج الحى الوارد -
+                    انتاج اللحوم اليومى -
+                    انتاج المصنعات اليومى -
+                    تحقيق خطة الانتاج -
+                    جودة العملية الانتاجية ...             
+                </p>
+            </div>
+        </div>
+
+          <div class="bottom-d">
+            <div class="card" style="width: 18rem;">
+              <img src="/images/chk.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">الدجاج الوارد</h5>
+                <p class="card-text">اعداد الدجاج - نسبة التجانس - الدجاج المرفوض</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/fresh.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">إنتاج المجزر</h5>
+                <p class="card-text">خطة الانتاج - انتاج المدرجات - انتاج المجزءات</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/fpp2.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">إنتاج المصنعات</h5>
+                <p class="card-text">خطة الانتاج - منتجات الوطنية - التصنيع للغير</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/employee.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">دوام العاملين</h5>
+                <p class="card-text">الاجازات الاعتيادية - الاجازات الغير مخططة - التدريبات</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+          </div>
+          <div class="more"><a href="#">التفاصيل ...</a></div>
+      </div>
+    </div>
+    <!-- end daily report section -->
+
+    <!-- start news section -->
+      <div class="news container">
+        <div class="news-wraber">
+          <img src="/images/profit.jpg" alt="">
+          <img src="/images/achiv.jpg" alt="">
+        </div>
+        <div class="news-wraber">
+          <img src="/images/concern.jpg" alt="">
+          <img src="/images/donext.jpg" alt="">
+        </div>
+        <div class="float">
+          <div class="title"><h2>ABCD</h2><span>Report</span></div>
+          <p>الانجازات الشهرية - التحديات - الخطط المستقبلية - العوائق</p>
+          <button class="news-btn">عرض التقرير</button>
+        </div>
+      </div>
+    <!-- end news section -->
+
+    <!-- ********************************************************** -->
+    <!-- <div class="adress">
+      <h1>التقرير الشهرى للقطاع الصناعى</h1>
+      <i class="fas fa-plane"></i>
+    </div> -->
+    <!-- ********************************************************** -->
+
+
+    <!-- start monthly section -->
+    <div class="content-section d-report ">
+      <div class="container">
+            <div class="top-d">
+            <!-- <div class="date">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>18-Feb-2022</span>
+            </div> -->
+            <div class="discription">
+                <h1>تقرير الشهرى للقطاع الصناعى</h1>
+                <p>
+                  كميات الانتاج الشهرى للمجزر و المصنعات - كفاءة الخطوط الانتاجية - تحقيق خطة المبيعات الشهرية - النتائج المعملية - التدريب ...
+                </p>
+            </div>
+        </div>
+
+          <div class="bottom-d">
+            <div class="card" style="width: 18rem;">
+              <img src="/images/incomming.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">انتاج المجــزر</h5>
+                <p class="card-text">المنتجات المبردة والمجمدة من الدجاج الكامل والمجزءات</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/fpp 3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">إنتاج المصنعات</h5>
+                <p class="card-text">منتجات الوطنية - منتجات اشهى - منتجات اللحوم الحمراء</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/plan.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">خطة الانتاج</h5>
+                <p class="card-text">خطة الانتاج - منتجات الوطنية - التصنيع للغير</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/images/eff.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">الكفاءة الانتاجية</h5>
+                <p class="card-text">قياس آداء الماكينات والخطوط الانتاجية</p>
+                <a href="#" class="btn btn-primary">التفاصيل ...</a>
+              </div>
+            </div>
+          </div>
+          <div class="more"><a href="#">التفاصيل ...</a></div>
+      </div>
+    </div>
+
+    <!-- end monthly section -->
+
+      
+    <!-- ********************************************************** -->
+    <!-- <div class="adress">
+        <h1>فريق إدارة التحسين</h1>
+        <i class="fas fa-plane"></i>
+    </div> -->
+    <!-- ********************************************************** -->
+
+    <!-- start about us -->
+    <div class="about-us container">
+          <div class="spinners">
+            <div class="spinner-grow text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <div class="discription">
+            <h1>أعضاء فريق إدارة التحسين المستمر</h1>
+        </div>
+
+        <div class="about-us-wraper">
+            <div class="profile">
+                <img src="/images/mbasha.PNG" alt="profile pic" class="pic">
+                <h3 class="name">M-Basha</h3>
+                <h5 class="title">Manager</h5>
+                <a href="#">View</a href="#">
+            </div>
+            <div class="profile">
+                <img src="/images/desoky.PNG" alt="profile pic" class="pic">
+                <h3 class="name">Hesham</h3>
+                <h5 class="title">Mamber</h5>
+                <a href="#">View</a href="#">
+            </div>
+            <div class="profile">
+                <img src="/images/abass.PNG" alt="profile pic" class="pic">
+                <h3 class="name">Mahmoud</h3>
+                <h5 class="title">Member</h5>
+                <a href="#">View</a href="#">
+            </div>
+            <div class="profile">
+                <img src="/images/logo.jpg" alt="profile pic" class="pic">
+                <h3 class="name">Ahmed</h3>
+                <h5 class="title">Member</h5>
+                <a href="#">View</a href="#">
+            </div>
+        </div>
+    </div>
+    <!-- end about us -->
+
+
+
+
+    <div class="content-section"></div>
+
+    <!-- start bright spot -->
+    <div class="bright-spot">
+    </div>
+    <!-- end bright spot -->
+
+    <div class="up"><i class="fas fa-chevron-up"></i></div>
+
+    <!-- start footer -->
+    <Footer class="container">
+        <div class="top">Copy rights <span>&copy</span> Ahmed Said</div>
+        <div class="botom">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github-square"></i></a>
+        </div>
+    </Footer>
+    <!-- end footer  -->
+
+
+   <!-- font awosome & bootstrap cdn links -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+   
+    <script src='main.js'></script>
+</body>
+</html>
